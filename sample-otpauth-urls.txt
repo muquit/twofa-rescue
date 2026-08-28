@@ -1,0 +1,5 @@
+otpauth://totp/GitHub:alice@example.com?secret=JBSWY3DPEHPK3PXP&issuer=GitHub
+otpauth://totp/AWS:alice@example.com?secret=KRSXG5CTMVRXEZLU&issuer=AWS
+otpauth://totp/Google:alice.dev@example.com?secret=MFRGGZDFMZTWQ2LK&issuer=Google
+otpauth://totp/Dropbox:alice@example.com?secret=NBSWY3DPO5XXE3DE&issuer=Dropbox
+otpauth://totp/Cloudflare:alice.work@example.com?secret=ORSXG5BAMVQXG43F&issuer=Cloudflare
