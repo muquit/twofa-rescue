@@ -1,7 +1,7 @@
 # Table Of Contents
 - [Introduction](#introduction)
 - [Background](#background)
-- [Latest Version (v1.0.1)](#latest-version-v101)
+- [Latest Version v1.0.1 (Aug-27-2026)](#latest-version-v101-aug-27-2026)
 - [Installation](#installation)
   - [Download pre-built binaries](#download-pre-built-binaries)
   - [Installing using Homebrew on Mac/Linux](#installing-using-homebrew-on-maclinux)
@@ -84,7 +84,7 @@ familiar.
 to import the encrypted JSON file from the old phone.
 
 
-# Latest Version (v1.0.1)
+# Latest Version v1.0.1 (Aug-27-2026)
 
 The latest version is v1.0.1, released on Aug-27-2026. Please look at [ChangeLog.md](ChangeLog.md) for details
 
