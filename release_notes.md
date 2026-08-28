@@ -6,13 +6,13 @@ See [ChangeLog.md](ChangeLog.md) for details about this release.
 
 | OS | Archive | Size (bytes) |
 |---|---|---:|
-| macOS | twofa-rescue-v1.0.1-darwin-amd64.d.tar.gz | 1730823 |
-| macOS | twofa-rescue-v1.0.1-darwin-arm64.d.tar.gz | 1589563 |
-| Linux | twofa-rescue-v1.0.1-linux-amd64.d.tar.gz | 1706623 |
-| Linux | twofa-rescue-v1.0.1-linux-arm.d.tar.gz | 1605664 |
-| Linux | twofa-rescue-v1.0.1-linux-arm64.d.tar.gz | 1537401 |
-| Windows | twofa-rescue-v1.0.1-windows-386.d.zip | 1698292 |
-| Windows | twofa-rescue-v1.0.1-windows-amd64.d.zip | 1764010 |
+| macOS | [twofa-rescue-v1.0.1-darwin-amd64.d.tar.gz](https://github.com/muquit/twofa-rescue/releases/download/v1.0.1/twofa-rescue-v1.0.1-darwin-amd64.d.tar.gz) | 1763928 |
+| macOS | [twofa-rescue-v1.0.1-darwin-arm64.d.tar.gz](https://github.com/muquit/twofa-rescue/releases/download/v1.0.1/twofa-rescue-v1.0.1-darwin-arm64.d.tar.gz) | 1615327 |
+| Linux | [twofa-rescue-v1.0.1-linux-amd64.d.tar.gz](https://github.com/muquit/twofa-rescue/releases/download/v1.0.1/twofa-rescue-v1.0.1-linux-amd64.d.tar.gz) | 1742113 |
+| Linux | [twofa-rescue-v1.0.1-linux-arm.d.tar.gz](https://github.com/muquit/twofa-rescue/releases/download/v1.0.1/twofa-rescue-v1.0.1-linux-arm.d.tar.gz) | 1629162 |
+| Linux | [twofa-rescue-v1.0.1-linux-arm64.d.tar.gz](https://github.com/muquit/twofa-rescue/releases/download/v1.0.1/twofa-rescue-v1.0.1-linux-arm64.d.tar.gz) | 1560313 |
+| Windows | [twofa-rescue-v1.0.1-windows-386.d.zip](https://github.com/muquit/twofa-rescue/releases/download/v1.0.1/twofa-rescue-v1.0.1-windows-386.d.zip) | 1733584 |
+| Windows | [twofa-rescue-v1.0.1-windows-amd64.d.zip](https://github.com/muquit/twofa-rescue/releases/download/v1.0.1/twofa-rescue-v1.0.1-windows-amd64.d.zip) | 1804763 |
 
 ## Installation
 
@@ -23,13 +23,13 @@ executable to a directory in your `PATH`. You may rename it to
 ## Checksums
 
 ```text
-e72531fda8e5c946076d960bbbf655dfd41e52ce6ea777ca7228157e3c2a384b  twofa-rescue-v1.0.1-darwin-amd64.d.tar.gz
-3e68a306ab219949cd0d2693d90a4895af9092e3dbdbf38ffa34afb70022b980  twofa-rescue-v1.0.1-darwin-arm64.d.tar.gz
-eb4e0cdf6ca14d70611858292f6402813e7e8375cb13b1c4fdac927547b0483c  twofa-rescue-v1.0.1-linux-amd64.d.tar.gz
-252954412d5845d905f1fae8119501423c2d0fa52fc7e6b2b4bc7ac86e42d5a0  twofa-rescue-v1.0.1-linux-arm.d.tar.gz
-afd3fe454280de3fea7e6b103dce115b81db9f634d2e7cf5169574454e3e20bc  twofa-rescue-v1.0.1-linux-arm64.d.tar.gz
-c623239d7857806b605c35c395514cd8f349f85d3259d0192cd482078e45c8f0  twofa-rescue-v1.0.1-windows-386.d.zip
-42f76a3329871903badffc0b4a80a6330b592e48c8921d13ad8aed24e359c87c  twofa-rescue-v1.0.1-windows-amd64.d.zip
+abd330cc906c1d3dbfdbbd4e1712066fab13a3de0391fe61c024f2f84b388c7a  twofa-rescue-v1.0.1-darwin-amd64.d.tar.gz
+89f43eec327d50ed6d89c1e7f42f94f7b1b188e9316610bbb3b9aa188f7b98d5  twofa-rescue-v1.0.1-darwin-arm64.d.tar.gz
+6cc01975fe8bebb238330f70340b0e3b5040ac73976c415c4038a88ab7742b8d  twofa-rescue-v1.0.1-linux-amd64.d.tar.gz
+904d0b99c772f46bb76571ec06e5ddbf934ccf2eee381f9c4ff01c105429baff  twofa-rescue-v1.0.1-linux-arm.d.tar.gz
+29ba76289d89b692d5f8b7f35c6dfe7fdfa85a6d9e777152318f90a44166239f  twofa-rescue-v1.0.1-linux-arm64.d.tar.gz
+ac2e807c61b0f90c8aeb263c3b1b05a7e6eb3e6ee96bbda0543036804fa440b6  twofa-rescue-v1.0.1-windows-386.d.zip
+5902bc0aca6507dbdda70c45728590ffda218abe3ec19b3eb4b8fbb715ca9a2f  twofa-rescue-v1.0.1-windows-amd64.d.zip
 ```
 
 ## Archive contents

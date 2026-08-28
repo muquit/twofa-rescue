@@ -9,16 +9,16 @@ class TwofaRescue < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/muquit/twofa-rescue/releases/download/v1.0.1/twofa-rescue-v1.0.1-darwin-arm64.d.tar.gz"
-    sha256 "6a5bc7167316fb589af6d58f899a4ca89abe2367dbe9b5f9b0c322610595946d"
+    sha256 "435433a11d90216f67e3b16f470a64be4de5df38b2832ac8ec0b3c890fed2ca5"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/muquit/twofa-rescue/releases/download/v1.0.1/twofa-rescue-v1.0.1-darwin-amd64.d.tar.gz"
-    sha256 "fd380f9df15be1d8cc6063222f6a8f21f2673d0195a452ebf2be90c5fe9ea288"
+    sha256 "d3ed03357681023003dc3ed6e613e41df06da088986718fe1501a0d2880aa246"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/muquit/twofa-rescue/releases/download/v1.0.1/twofa-rescue-v1.0.1-linux-amd64.d.tar.gz"
-    sha256 "802fe64e922065072d1e08b00b903631ec210b2618ad2e45504940ab4b272561"
+    sha256 "b49ff92e60bf8c61a83128e273858fe66bfc848cbb67af34d1adc19c34aac09e"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/muquit/twofa-rescue/releases/download/v1.0.1/twofa-rescue-v1.0.1-linux-arm64.d.tar.gz"
-    sha256 "bef06f2a6925b0232cac06436bc98137fdadb8dcb0e59c964c118d3769a42445"
+    sha256 "ce2dcd7aaa0e9b6e3482cd6f580514c37c3618d55482ea462da3b3e4dc7787c2"
   end
 
   def install

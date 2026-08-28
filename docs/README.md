@@ -3,6 +3,8 @@
 
 @[:markdown](bg.md)
 
+@[:markdown](version.md)
+
 @[:markdown](download.md)
 
 @[:markdown](export.md)
@@ -15,7 +17,6 @@
 
 @[:markdown](encrypt.md)
 
-@[:markdown](version.md)
 
 @[:markdown](test.md)
 

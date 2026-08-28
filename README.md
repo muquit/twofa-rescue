@@ -1,6 +1,7 @@
 # Table Of Contents
 - [Introduction](#introduction)
 - [Background](#background)
+- [Latest Version (v1.0.1)](#latest-version-v101)
 - [Installation](#installation)
   - [Download pre-built binaries](#download-pre-built-binaries)
   - [Installing using Homebrew on Mac/Linux](#installing-using-homebrew-on-maclinux)
@@ -25,7 +26,6 @@
   - [Show 2FA secret QR Code](#show-2fa-secret-qr-code)
 - [Tested Terminals](#tested-terminals)
 - [Encrypting files](#encrypting-files)
-- [Latest Version (v1.0.1)](#latest-version-v101)
 - [Testing](#testing)
   - [Running tests](#running-tests)
 - [FAQ](#faq)
@@ -82,6 +82,11 @@ familiar.
 
 **Update:** After deleting and re-installing the [Ente Auth](https://ente.com/auth/) app, it was able
 to import the encrypted JSON file from the old phone.
+
+
+# Latest Version (v1.0.1)
+
+The latest version is v1.0.1, released on Aug-27-2026. Please look at [ChangeLog.md](ChangeLog.md) for details
 
 
 # Installation
@@ -576,11 +581,6 @@ it. Treat `TWOFA_RESCUE_PASS` and the encrypted output with the same care
 as the original secrets.
 
 
-# Latest Version (v1.0.1)
-
-The latest version is v1.0.1, released on Aug-15-2026. 
-Please look at [ChangeLog.md](ChangeLog.md) for details.
-
 
 # Testing
 
@@ -589,35 +589,6 @@ Please look at [ChangeLog.md](ChangeLog.md) for details.
 ```
 make test
 ```
-
-This runs the full test suite. It takes about 10 seconds because one test uses
-the real [Ente Auth](https://ente.com/auth/) Argon2id parameters.
-
-You can also run the tests directly:
-
-```
-go test ./...
-```
-
-`crypt_test.go` tests the pure [go](https://go.dev/) implementation of
-`crypto_secretstream_xchacha20poly1305` against output created by the real
-[libsodium](https://libsodium.org) C library.
-
-It checks:
-
-* Ciphertext created by the real [libsodium](https://libsodium.org) library can be decrypted.
-* Encrypting the same test data produces the expected [libsodium](https://libsodium.org) output.
-* Encryption and decryption work with different message sizes.
-* A wrong password is rejected.
-* Corrupted ciphertext is rejected.
-* The complete `--encrypt` and `--decrypt` commands work with a file on disk.
-
-The tests found a padding bug while the code was being converted from cgo to
-pure [go](https://go.dev/). The bug only affected messages whose length was not a multiple of 16
-bytes.
-
-See [ente-auth-export-encryption-algorithm-claude.md](https://github.com/muquit/twofa-rescue/blob/main/docs/ente-auth-export-encryption-algorithm-claude.md)
-for details.
 
 
 # FAQ
