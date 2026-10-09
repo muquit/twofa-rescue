@@ -8,7 +8,7 @@ effort. It's a nightmare.
 If your phone is lost or stolen, you can wipe it remotely, but you still
 need your 2FA codes.
 
-@ME@ is a cross-platform command-line tool so you never have to depend on a
-single 2FA app or device.
+@ME@ is a command-line tool for macOS, Linux and Windows, so you never have to
+depend on a single 2FA app or device.
 
 Keep reading...
