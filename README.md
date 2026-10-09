@@ -41,23 +41,18 @@
 
 # Introduction
 
-* `twofa-rescue` is a cross-platform command-line tool to decrypt [Ente Auth](https://ente.com/auth/)
-encrypted export files and generate live 2FA codes on a terminal.
+Most of us keep our 2FA codes on a phone. What happens if you lose it, or the
+authenticator app stops working? Without backup codes, you are locked out of
+your accounts until you reset 2FA on each one, which takes a lot of time and
+effort. It's a nightmare.
 
-* It can also display QR codes of your 2FA secrets in the [Terminals](#tested-terminals) (recommended),
-or export them as PNG files (not recommended) or a text file with TOTP URLs
-(not recommended), so you can import them into other authenticator apps.
+If your phone is lost or stolen, you can wipe it remotely, but you still
+need your 2FA codes.
 
+`twofa-rescue` is a cross-platform command-line tool so you never have to depend on a
+single 2FA app or device.
 
-> [!NOTE]
-> This tool only decrypts encrypted export files from [Ente Auth](https://ente.com/auth/),
-> which is the authenticator app I currently use.
-
-
-I created it when [Ente Auth](https://ente.com/auth/) stopped working (continuous spinning circle)
-after upgrading my iPhone.
-
-Hope you find it useful as well.
+Keep reading...
 
 
 # Background
@@ -80,6 +75,12 @@ single mobile app, or be in trouble if I lose my phone.**
 It follows Ente's documented export format in [Exporting your data out of Ente Auth](https://ente.com/help/auth/migration/export). I am
 also the author of [libsodium-jna](https://github.com/muquit/libsodium-jna), so the underlying crypto methods were
 familiar.
+
+I still use [Ente Auth](https://ente.com/auth/). I trust its encrypted export (Argon2id and libsodium
+secretstream), so I keep copies on systems inside and outside of my house. I
+live in terminals, so I get codes without fetching my phone. And I can import
+my secrets into another app whenever I want. See the
+[FAQ](faq.md#why-did-i-not-abandon-ente-auth-after-the-bug-that-motivated-this-cli).
 
 **Update:** After deleting and re-installing the [Ente Auth](https://ente.com/auth/) app, it was able
 to import the encrypted JSON file from the old phone.

@@ -1,19 +1,14 @@
 # Introduction
 
-* @ME@ is a cross-platform command-line tool to decrypt @ENTE_AUTH@
-encrypted export files and generate live 2FA codes on a terminal.
+Most of us keep our 2FA codes on a phone. What happens if you lose it, or the
+authenticator app stops working? Without backup codes, you are locked out of
+your accounts until you reset 2FA on each one, which takes a lot of time and
+effort. It's a nightmare.
 
-* It can also display QR codes of your 2FA secrets in the [Terminals](#tested-terminals) (recommended),
-or export them as PNG files (not recommended) or a text file with TOTP URLs
-(not recommended), so you can import them into other authenticator apps.
+If your phone is lost or stolen, you can wipe it remotely, but you still
+need your 2FA codes.
 
+@ME@ is a cross-platform command-line tool so you never have to depend on a
+single 2FA app or device.
 
-> [!NOTE]
-> This tool only decrypts encrypted export files from @ENTE_AUTH@,
-> which is the authenticator app I currently use.
-
-
-I created it when @ENTE_AUTH@ stopped working (continuous spinning circle)
-after upgrading my iPhone.
-
-Hope you find it useful as well.
+Keep reading...

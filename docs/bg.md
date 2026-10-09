@@ -19,5 +19,11 @@ It follows Ente's documented export format in @ENTE_AUTH_EXPORT_DOC@. I am
 also the author of @LIBSODIUM_JNA@, so the underlying crypto methods were
 familiar.
 
+I still use @ENTE_AUTH@. I trust its encrypted export (Argon2id and libsodium
+secretstream), so I keep copies on systems inside and outside of my house. I
+live in terminals, so I get codes without fetching my phone. And I can import
+my secrets into another app whenever I want. See the
+[FAQ](faq.md#why-did-i-not-abandon-ente-auth-after-the-bug-that-motivated-this-cli).
+
 **Update:** After deleting and re-installing the @ENTE_AUTH@ app, it was able
 to import the encrypted JSON file from the old phone.
