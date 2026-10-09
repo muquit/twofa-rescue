@@ -8,8 +8,9 @@ or export them as PNG files (not recommended) or a text file with TOTP URLs
 (not recommended), so you can import them into other authenticator apps.
 
 
-**Note:** This tool only decrypts encrypted export files from @ENTE_AUTH@,
-which is the authenticator app I currently use.
+> [!NOTE]
+> This tool only decrypts encrypted export files from @ENTE_AUTH@,
+> which is the authenticator app I currently use.
 
 
 I created it when @ENTE_AUTH@ stopped working (continuous spinning circle)

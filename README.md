@@ -49,8 +49,9 @@ or export them as PNG files (not recommended) or a text file with TOTP URLs
 (not recommended), so you can import them into other authenticator apps.
 
 
-**Note:** This tool only decrypts encrypted export files from [Ente Auth](https://ente.com/auth/),
-which is the authenticator app I currently use.
+> [!NOTE]
+> This tool only decrypts encrypted export files from [Ente Auth](https://ente.com/auth/),
+> which is the authenticator app I currently use.
 
 
 I created it when [Ente Auth](https://ente.com/auth/) stopped working (continuous spinning circle)
@@ -66,7 +67,7 @@ past there was speculation that google might discontinue it. I looked
 around for an open source alternative, reviewed the code, and moved to
 [Ente Auth](https://ente.com/auth/). I do not store my authentication data in the cloud. Instead,
 I periodically export an encrypted backup and keep copies on several
-systems.
+systems inside and outside of my house.
 
 After getting a new iPhone (iOS v26.6), [Ente Auth](https://ente.com/auth/) stopped
 working and continuously displayed a spinner forever. Updating the app did not help, and
@@ -322,7 +323,9 @@ ISSUER  ACCOUNT            CODE    EXPIRES IN
 GitHub  alice@example.com  123456  23s 14:32:07
 AWS     alice@example.com  654321  59s 14:32:07
 ```
-**Note:** Issuer, account, and codes shown above are placeholders, not real data
+
+> [!NOTE]
+> Issuer, account, and codes shown above are placeholders, not real data
 
 
 ## Filtering
@@ -342,8 +345,9 @@ tool, or write it to a file with `-o`.
 twofa-rescue --decrypt export_encrypted_json.json
 twofa-rescue --decrypt -o plain.txt export_encrypted_json.json
 ```
-**WARNING:** Be careful! It is not a good idea to create a plain text file of
-the secrets on the disk. Use it only if there is a pressing need to do that.
+> [!WARNING]
+> Be careful! It is not a good idea to create a plain text file of
+> the secrets on the disk. Use it only if there is a pressing need to do that.
 
 Example output (issuers, accounts, and secrets shown below are placeholders,
 not real data):
@@ -362,18 +366,21 @@ another authenticator app by scanning or uploading the image.
 ```
 twofa-rescue --export-qr /path/to/dir export_encrypted_json.json
 ```
-**WARNING:** These files contain your 2FA secrets in plaintext. Import them, then
-delete the files and empty your trash. Do not leave them sitting on disk.
+> [!WARNING]
+> These files contain your 2FA secrets in plaintext. Import them, then
+> delete the files and empty your trash. Do not leave them sitting on disk.
 
 ## QR codes in the terminal (recommended)
 
-**NOTE:** Make sure your terminal can render a scannable QR code before using
-this. See [Tested Terminals](#tested-terminals) for details.
+> [!NOTE]
+> Make sure your terminal can render a scannable QR code before using
+> this. See [Tested Terminals](#tested-terminals) for details.
 
-**NOTE:** On terminals without an inline image protocol, the QR code is
-drawn with text block characters instead of a real image. This only looks
-square if the terminal's character cell is close to twice as tall as it
-is wide, which is not always the case. On Apple's Terminal.app, this can
+> [!NOTE]
+> On terminals without an inline image protocol, the QR code is
+> drawn with text block characters instead of a real image. This only looks
+> square if the terminal's character cell is close to twice as tall as it
+> is wide, which is not always the case. On Apple's Terminal.app, this can
 make the QR code look squished. If that happens, use `--export-qr`
 instead, or switch to a terminal with inline image support such as
 [iTerm2](https://iterm2.com/).
@@ -444,9 +451,10 @@ This is a test on a junk 2012 13" MacBook Pro with Apple Terminal
   </tr>
 </table>
 
-- Notice Above: had to reduced font size 3 times by typing `Command-` and after that
-the QR code was displayed successfully. Look at [FAQ](#faq) for details on
-Apple Terminal limitations.
+> [!NOTE] 
+> Had to reduced font size 3 times by typing `Command-` and after that
+> the QR code was displayed successfully. Look at [FAQ](#faq) for details on
+> Apple Terminal limitations.
 
 <table>
   <tr>
@@ -576,9 +584,10 @@ app too, not just this tool.
 ```
 twofa-rescue --encrypt -o encrypted.json plain.txt
 ```
-**WARNING:** Anyone with the encrypted file and the password can decrypt
-it. Treat `TWOFA_RESCUE_PASS` and the encrypted output with the same care
-as the original secrets.
+> [!WARNING]
+> Anyone with the encrypted file and the password can decrypt
+> it. Treat `TWOFA_RESCUE_PASS` and the encrypted output with the same care
+> as the original secrets.
 
 
 
@@ -745,4 +754,4 @@ works: [ente-auth-export-encryption-algorithm-claude.md](docs/ente-auth-export-e
 
 
 ---
-<sub>TOC/glossary expansion by https://github.com/muquit/markdown-toc-go v1.0.6 on Aug-27-2026</sub>
+<sub>TOC/glossary expansion by https://github.com/muquit/markdown-toc-go v1.0.6 on Oct-08-2026</sub>

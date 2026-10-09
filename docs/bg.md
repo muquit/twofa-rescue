@@ -5,7 +5,7 @@ past there was speculation that google might discontinue it. I looked
 around for an open source alternative, reviewed the code, and moved to
 @ENTE_AUTH@. I do not store my authentication data in the cloud. Instead,
 I periodically export an encrypted backup and keep copies on several
-systems.
+systems inside and outside of my house.
 
 After getting a new iPhone (iOS v26.6), @ENTE_AUTH@ stopped
 working and continuously displayed a spinner forever. Updating the app did not help, and

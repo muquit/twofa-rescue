@@ -13,6 +13,7 @@ app too, not just this tool.
 ```
 twofa-rescue --encrypt -o encrypted.json plain.txt
 ```
-**WARNING:** Anyone with the encrypted file and the password can decrypt
-it. Treat `TWOFA_RESCUE_PASS` and the encrypted output with the same care
-as the original secrets.
+> [!WARNING]
+> Anyone with the encrypted file and the password can decrypt
+> it. Treat `TWOFA_RESCUE_PASS` and the encrypted output with the same care
+> as the original secrets.
